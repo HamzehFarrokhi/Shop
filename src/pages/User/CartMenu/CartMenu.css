@@ -1,0 +1,16 @@
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon p {
+    position: absolute;
+    font-size: 0.7rem;
+    padding: 0 5px;
+    border: 1px solid rgb(239, 142, 172);
+    border-radius: 50%;
+    background-color: #ee5da1;
+    color: white !important;
+    bottom: -8px;
+    right: -8px;
+}

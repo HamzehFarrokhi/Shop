@@ -1,0 +1,59 @@
+.order-category ul {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid var(--border);
+}
+
+.order-items {
+    box-shadow: var(--lightShadow);
+}
+
+.order-category ul li {
+    padding: 8px 16px;
+    gap: 5px;
+}
+
+.order-main-status i {
+    font-size: 1.2rem;
+    margin-left: 12px;
+}
+
+.seperator {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--border);
+    margin: 0 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .order-items {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-bottom: 3px dotted var(--border);
+        box-shadow: none;
+    }
+    .order-items:last-child {
+        border: none;
+        border-radius: 10px;
+    }
+    .order-cart {
+        flex-direction: column;
+    }
+
+    .order-main-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-main-status i {
+        font-size: 1rem;
+    }
+
+    .seperator {
+        display: none;
+    }
+}

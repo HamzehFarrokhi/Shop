@@ -1,0 +1,8 @@
+.auth {
+    margin: 30px auto;
+    padding: 32px 20px;
+}
+.auth p {
+    color: var(--primaryTextColor);
+    font-size: 1rem;
+}

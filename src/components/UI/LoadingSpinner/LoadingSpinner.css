@@ -1,0 +1,14 @@
+.loading-spinner {
+    color: #a549be;
+    animation: goUp linear 0.25s, rotate linear 1s infinite;
+    margin: 0 22px;
+}
+
+.big-spinner {
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.big-spinner i {
+    font-size: 4rem;
+}

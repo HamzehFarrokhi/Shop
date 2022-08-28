@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Vazir;
+    src: url('./vazir/Vazir.eot');
+    src: url('./vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('./vazir/Vazir.woff') format('woff'),
+    url('./vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: IranSans;
+    src: url('./iranSans/iranSans.eot');
+    src: url('./iranSans/iranSans.eot?#iefix') format('embedded-opentype'),
+    url('./iranSans/iranSans.woff') format('woff'),
+    url('./iranSans/iranSans.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Yekan;
+    src: url('./yekan/Yekan.eot');
+    src: url('./yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+    url('./yekan/yekan.woff') format('woff'),
+    url('./yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Samim;
+    src: url('./samim-digits/Samim-Bold-FD-WOL.eot');
+    src: url('./samim-digits/Samim-Bold-FD-WOL.eot?#iefix') format('embedded-opentype'),
+    url('./samim-digits/Samim-Bold-FD-WOL.woff') format('woff'),
+    url('./samim-digits/Samim-Bold-FD-WOL.ttf') format('truetype');
+    font-weight: normal;
+}

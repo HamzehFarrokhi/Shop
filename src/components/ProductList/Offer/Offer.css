@@ -1,0 +1,23 @@
+.offer {
+    position: absolute;
+    top: 16px;
+    right: -42px;
+    width: 125px;
+    transform: rotateZ(45deg);
+    border: 1px solid var(--border);
+    text-align: center;
+    background-color: rgb(253, 82, 82);
+    margin: 0 12px;
+}
+
+.offer .offer-text {
+    font-size: 14px;
+    padding: 4px 0;
+    color: #fff;
+}
+
+@media only screen and (max-width: 810px) {
+    .offer .offer-text {
+        font-size: 12px;
+    }
+}

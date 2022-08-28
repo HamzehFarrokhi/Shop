@@ -1,0 +1,228 @@
+.shipping-page {
+    background: var(--body);
+    position: relative;
+}
+
+.shipping-top {
+    width: 100%;
+    padding: 0 calc(50vw - 500px);
+    height: 400px;
+    background: var(--shippingBackground);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.shipping-top .shipping-logo {
+    background: var(--background);
+    width: fit-content;
+    padding: 8px 20px;
+    margin-top: 16px;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.shipping-steps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color3);
+    margin-top: 50px;
+}
+
+.shipping-steps .step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shipping-steps .line {
+    width: 80px;
+    height: 2px;
+    margin: 0 20px;
+    background-color: #aaa;
+}
+
+.shipping-steps div i {
+    font-size: 1.8rem;
+}
+
+.shipping-steps div p {
+    font-size: 1.2rem;
+}
+
+.shipping-steps .active-step {
+    color: #eee;
+    font-weight: 600;
+}
+
+.shipping-steps .active-step i {
+    font-weight: 900;
+}
+
+.shipping-panel {
+    width: 1000px;
+    min-height: 1000px;
+    background: var(--background);
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: var(--boxShadow);
+    padding: 30px;
+}
+
+.shipping-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.shipping-price>div {
+    margin-right: 20px;
+}
+
+.shipping-panel>div {
+    margin-bottom: 40px;
+}
+
+.shipping-cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shipping-cart .shipping-products {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+    background: var(--sideBackground);
+}
+
+.shipping-products p {
+    position: absolute;
+    border: 1px solid var(--border);
+    background-color: var(--border);
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    bottom: -13px;
+    color: var(--color2);
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .shipping-top .shipping-logo {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .shipping-panel {
+        width: calc(100% - 40px);
+        top: 230px;
+        right: 20px;
+        transform: none;
+    }
+
+    .shipping-steps .step {
+        flex-direction: column;
+    }
+
+    .shipping-steps .line {
+        width: 50px;
+        height: 2px;
+        margin: 0 30px;
+        background-color: #aaa;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .shipping-steps .step {
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 15px;
+    }
+
+    .shipping-steps .line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .shipping-price {
+        padding-top: 6px;
+        display: block;
+        height: 110px;
+    }
+
+    .shipping-price>div {
+        margin: 5px 0;
+        margin-right: 15px;
+    }
+
+    .shipping-price button {
+        width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .shipping-price {
+        height: 128px;
+    }
+
+    .shipping-price>div {
+        flex-wrap: wrap;
+    }
+
+    .shipping-price .title-2 {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .shipping-panel {
+        top: 300px;
+    }
+
+    .shipping-steps {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .shipping-steps>div {
+        border-bottom: 2px dotted rgba(238, 238, 238, 0.4);
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+
+    .shipping-steps .step {
+        flex-direction: row;
+        border: none;
+    }
+
+    .shipping-steps .line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .shipping-cart {
+        justify-content: center;
+    }
+    .shipping-cart .shipping-products {
+        width: 150px;
+        height: 150px;
+    }
+}

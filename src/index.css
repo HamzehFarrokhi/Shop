@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: iranSans;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--body);
+    transition: background-color 0.5s;
+}
+
+.test {
+    color: #888888;
+}
+
+.border-1 {
+    border: 1px solid;
+}
+
+.border-ddd {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.border-ccc {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(118, 150, 255);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-v {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-gap-10 {
+    gap: 10px;
+}
+
+.flex-gap-20 {
+    gap: 20px;
+}
+
+.flex-gap-40 {
+    gap: 40px;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--sideBackground);
+    box-shadow: var(--lightShadow);
+}
+
+.stick-to-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-v-10 {
+    padding: 10px 0;
+}
+
+.pad-v-20 {
+    padding: 20px 0;
+}
+
+.pad-h-20 {
+    padding: 0 20px;
+}
+
+.marg-20 {
+    margin: 20px;
+}
+
+.marg-30 {
+    margin: 30px;
+}
+
+.marg-h-10 {
+    margin: 0 10px;
+}
+
+.marg-h-20 {
+    margin: 0 20px;
+}
+
+.marg-v-10 {
+    margin: 10px 0;
+}
+
+.marg-v-20 {
+    margin: 20px 0;
+}
+
+.marg-v-30 {
+    margin: 20px 0;
+}
+
+.marg-15-30 {
+    margin: 15px 30px;
+}
+
+.marg-30-20 {
+    margin: 30px 20px;
+}
+
+.marg-b-10 {
+    margin-bottom: 10px;
+}
+
+.marg-b-20 {
+    margin-bottom: 20px;
+}
+
+.title-1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.title-2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.title-3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.title-4 {
+    font-size: 0.8rem;
+    color: var(--color2);
+}
+
+.title-5 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.title-6 {
+    font-size: 0.7rem;
+    color: var(--color2);
+}
+
+.descripe {
+    font-size: 0.8rem;
+    color: var(--color3);
+}
+
+.descripe-1 {
+    font-size: 1.2rem;
+    color: var(--color3);
+}
+
+.descripe-2 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color3);
+}
+
+.descripe-3 {
+    font-size: 0.7rem;
+    color: var(--color3);
+}
+
+.descripe-4 {
+    font-size: 1rem;
+    color: var(--color3);
+}
+
+.font-samim {
+    font-family: Samim;
+}
+
+.font-3rem {
+    font-size: 3rem;
+}
+
+.clamp-text-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 41px;
+}
+
+.clamp-text-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.blue-grad {
+    background: linear-gradient(to left bottom, rgb(0, 102, 255), #ddd);
+}
+
+.red-grad {
+    background: linear-gradient(to left bottom, rgb(255, 0, 13), rgb(235, 163, 163));
+}
+
+.green-grad {
+    background: linear-gradient(to left bottom, rgb(0, 255, 64), #ddd);
+}
+
+.yellow-grad {
+    background: linear-gradient(to left bottom, rgb(229, 255, 0), #ddd);
+}
+
+.orange-grad {
+    background: linear-gradient(to left bottom, rgb(255, 145, 0), #ddd);
+}
+
+.gray-grad {
+    background: linear-gradient(to left bottom, rgb(105, 105, 105), #ddd);
+}
+
+.insta-grad {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.icon-background {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-circle {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1400px) {
+    * {
+        font-size: 14px;
+    }
+}

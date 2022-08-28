@@ -1,0 +1,186 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: var(--lightShadow);
+}
+
+.navbar {
+    background-color: var(--sideBackground);
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100% !important;
+}
+
+.top-nav {
+    width: 1400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-nav .logo-n-search {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    height: 100%;
+    margin: 10px 5px;
+    padding: 6px 10px;
+    color: var(--primaryColor);
+    background: var(--sidebackground);
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    background: var(--primaryHover);
+}
+
+.top-nav nav i {
+    font-size: 18px;
+}
+
+.bottom-nav a {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.bottom-nav p {
+    font-size: 14px;
+}
+
+.bottom-nav i {
+    font-size: 16px;
+    padding: 6px 10px;
+    padding-right: 0;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--sideBackground);
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: var(--primaryHover);
+}
+
+.profile-button>i {
+    color: var(--primaryColor);
+}
+
+.active-menu {
+    background-color: var(--primaryHover);
+}
+
+.login-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    gap: 15px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.login-buttons:hover {
+    background-color: var(--primaryHover);
+}
+
+.login-buttons p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.login-buttons i {
+    transform: rotate(180deg);
+}
+
+.slash-left button {
+    border: none;
+    outline: none;
+    background-color: var(--sideBackground);
+}
+
+.slash-left {
+    padding: 0;
+}
+
+.slash-left:hover {
+    background-color: #fff;
+}
+
+.v-slash {
+    content: '';
+    height: 30px;
+    margin: 0 5px;
+    border-right: var(--borderWidth) solid var(--border);
+}
+
+.search-item {
+    display: none;
+}
+
+@media only screen and (max-width: 1450px) {
+    .top-nav {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .search-item {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .top-nav {
+        justify-content: center;
+    }
+    .logo-n-search {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .login-buttons {
+        padding: 8px 12px;
+    }
+    .login-buttons i {
+        display: none;
+    }
+    .login-buttons p {
+        font-size: 10px;
+        text-align: center;
+    }
+}

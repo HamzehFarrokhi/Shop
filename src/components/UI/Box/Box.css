@@ -1,0 +1,20 @@
+.simple-box {
+    background-color: var(--sideBackground);
+    color: var(--color2);
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.box-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.box-head .box-title {
+    color: var(--color2);
+    padding: 5px 10px;    
+}

@@ -1,0 +1,18 @@
+.filter-container .filter-drawer {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-drawer .filter-drawer-items {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-drawer-items .drawer-count {
+    color: #ccc;
+    font-family: Samim;
+    font-size: 0.7rem;
+}

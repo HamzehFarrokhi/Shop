@@ -1,0 +1,52 @@
+.xiaomi-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-color: rgb(255, 105, 0);
+}
+
+.xiaomi-logo span {
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+.xiaomi-logo span:nth-child(1) {
+    background-color: #fff;
+    width: 40%;
+    height: 35%;
+    border-radius: 1px 4px 1px 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+
+.xiaomi-logo span:nth-child(2) {
+    background-color: rgb(255, 105, 0);
+    width: 25%;
+    height: 30%;
+    border-radius: 0 2.5px 0 0;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 28%;
+}
+
+.xiaomi-logo span:nth-child(3) {
+    background-color: #fff;
+    width: 7%;
+    height: 21%;
+    top: 56.5%;
+    transform: translateY(-50%);
+    left: 37%;
+}
+
+.xiaomi-logo span:nth-child(4) {
+    background-color: #fff;
+    width: 8%;
+    height: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23%;
+}

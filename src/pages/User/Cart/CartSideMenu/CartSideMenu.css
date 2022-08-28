@@ -1,0 +1,31 @@
+.cart-side-menu {
+    width: 320px;
+    max-height: 350px;
+    margin-right: 25px;
+}
+
+.cart-menu-mobile {
+    display: none;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 800px) {
+    .cart-side-menu {
+        margin: 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .cart-menu-mobile {
+        display: flex;
+        height: 80px;
+    }
+
+    .cart-menu-mobile button {
+        height: 60px;
+    }
+
+    .cart-side-cta {
+        display: none;
+    }
+}

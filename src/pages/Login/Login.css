@@ -1,0 +1,120 @@
+.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-card {
+    width: fit-content;
+    width: 400px;
+    max-width: calc(100% - 20px);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--sideBackground);
+}
+
+.site-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    font-size: 24px;
+}
+
+.site-title a {
+    text-decoration: none;
+}
+
+.login-loader {
+    display: flex;
+    justify-content: center;
+}
+
+.login-loader i {
+    font-size: 1.8rem;
+}
+
+@keyframes goUp {
+    from {
+        opacity: 0.1;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.form-title {
+    margin: 15px 0;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--primaryColor);
+}
+
+.relative-card {
+    position: relative;
+    padding: 50px;
+}
+
+.back-to-url {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primaryTextColor);
+    cursor: pointer;
+    padding: 5px 16px;
+    border-radius: 10px;
+}
+
+.back-to-url:hover {
+    background-color: var(--primaryHover);
+}
+
+@media only screen and (max-width: 400px) {
+    .relative-card {
+        padding: 30px;
+    }
+
+    .back-to-url {
+        right: 5px;
+        top: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .relative-card {
+        padding: 20px;
+    }
+
+    .back-to-url {
+        right: 0;
+        top: 5px;
+    }
+
+    .back-to-url p {
+        font-size: 0.8rem;
+    }
+
+    .back-to-url i {
+        font-size: 0.8rem;
+    }
+}

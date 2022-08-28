@@ -1,0 +1,15 @@
+.user-page {
+    margin: 40px auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .user-page {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .user-page {
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,43 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-top: 2px solid var(--border);
+}
+
+.pagination .page-panel {
+    display: flex;
+}
+
+.page-panel p {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--color2);
+    font-family: Samim;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.page-panel .active-page {
+    background-color: rgb(243, 77, 77);
+    color: #eee;
+}
+
+.pagination .back-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.pagination .back-next p {
+    padding: 0 15px;
+}

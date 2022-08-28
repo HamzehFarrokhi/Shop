@@ -1,0 +1,34 @@
+.forget-card {
+    padding-bottom: 0;
+}
+
+.forget-form {
+    padding-bottom: 50px;
+    width: 350px;
+}
+
+.forget-form .site-title {
+    font-size: 24px;
+    color: var(--primaryTextColor);
+}
+
+.forget-title {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-align: right;
+    color: var(--primaryColor);
+}
+
+.forget-status-message {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: var(--color3);
+    text-align: justify;
+}
+
+@media only screen and (max-width: 500px) {
+    .forget-form {
+        width: calc(100% - 80px);
+    }
+}

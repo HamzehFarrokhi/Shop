@@ -1,0 +1,58 @@
+.form-input {
+    padding: 10px 0;
+}
+
+.edit-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--primaryTextColor);
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.edit-phone>i {
+    transition: 0.25s;
+}
+
+.edit-phone:hover.edit-phone>i {
+    transform: translateX(-10px);
+}
+
+.user-status {
+    font-size: 0.9rem;
+    color: var(--color3);
+    text-align: justify;
+}
+
+.user-status span {
+    font-size: 0.9rem;
+}
+
+.user-status .phone-number {
+    font-family: Samim;
+}
+
+.error-input {
+    font-size: 0.7rem;
+    color: var(--errorText);
+    text-align: justify;
+    animation: goUp linear 0.25s;
+}
+
+.error-input .phone-number {
+    font-family: Samim;
+}
+
+@keyframes goUp {
+    from {
+        opacity: 0.1;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

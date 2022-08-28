@@ -1,0 +1,58 @@
+.trends {
+    width: 25%;
+    height: 500px;
+}
+
+.trend-product {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    border-style: solid solid solid none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: var(--lightShadow);
+}
+
+.trend-product i {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    margin-left: 15px;
+    color: var(--color3);
+}
+
+.trend-product p {
+    font-size: 1rem;
+    color: var(--color4);
+}
+
+.trend-product:hover {
+    background-color: var(--primaryHover);
+}
+
+.trend-product-active {
+    background-color: var(--primaryHover);
+}
+
+@media only screen and (max-width: 1300px) {
+    .trends {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .trendbox-title {
+        width: 220px;
+    }
+
+    .trend-product {
+        width: 220px;
+        margin-bottom: 0;
+        margin-left: 8px;
+        border-radius: 10px 10px 0 0;
+        border-style: solid solid none solid;
+    }
+}

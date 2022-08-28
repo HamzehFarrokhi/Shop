@@ -1,0 +1,14 @@
+.product-rate {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.product-rate i {
+    color: rgb(249, 188, 0);
+    margin: 0 8px;
+}
+
+.product-rate p {
+    font-family: Samim;
+    color: var(--color3);
+}

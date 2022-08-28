@@ -1,0 +1,23 @@
+.toman {
+    position: relative;
+    width: 20px;
+    height: 26px;
+}
+
+.toman p {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.toman p:first-child {
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+
+.toman p:last-child {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}

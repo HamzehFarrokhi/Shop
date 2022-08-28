@@ -1,0 +1,61 @@
+.btn {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font: 0.9rem;
+    color: white;
+    padding: 8px 16px;
+    padding-bottom: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.success {
+    background-color: #388e3c;
+}
+
+.light-theme .danger {
+    background-color: #f37777;
+}
+
+.dark-theme .danger {
+    background-color: #ad6161;
+}
+
+.enter {
+    background-color: cornflowerblue;
+}
+
+.form {
+    background-color: #a549be;
+}
+
+.buy {
+    background-color: cornflowerblue;
+    margin: 10px 0;
+}
+
+.idle {
+    color: var(--color4);
+    background-color: transparent;
+    outline: 2px solid var(--color3);
+    outline-offset: -2px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.width-100 {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.width-50 {
+    width: 50%;
+    margin: 0;
+    margin-top: 20px;
+}

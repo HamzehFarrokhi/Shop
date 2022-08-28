@@ -1,0 +1,31 @@
+.product-price {
+    display: flex;
+    align-items: center;
+    font-family: Samim;
+    padding: 10px 0;
+}
+
+.product-price div {
+    margin: 0 6px;
+}
+
+.product-price .offed-price {
+    text-decoration-line: line-through;
+}
+
+.product-price .offer-percent {
+    background-color: rgb(253, 82, 82);
+    color: white;
+    border-radius: 10px;
+    height: 22px;
+    padding: 0 6px;
+    text-align: center;
+    font: inherit;
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.offer-percent .offer-percent-text {
+    font: inherit;
+    margin-right: 2px;
+}

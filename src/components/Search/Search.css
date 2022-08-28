@@ -1,0 +1,215 @@
+.fixed-holder {
+    position: fixed;
+    right: calc(50% - 500px);
+    top: 10px;
+    z-index: 90;
+}
+
+.search {
+    position: relative;
+}
+
+.search .search-field {
+    display: flex;
+    align-items: center;
+    border: var(--borderWidth) solid var(--border);
+    background-color: var(--primaryHover);
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+.search-field i {
+    color: var(--primaryColor);
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.search-field input {
+    outline: none;
+    border: none;
+    font: inherit;
+    display: block;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    background-color: var(--primaryHover);
+    color: var(--color2);
+}
+
+.search-field input::placeholder {
+    color: var(--color2);
+}
+
+.search .search-result {
+    position: absolute;
+    padding: 10px 0;
+    width: fit-content;
+    height: 300px;
+    right: 0;
+    top: calc(40px + (var(--borderWidth) * 2));
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--background);
+    display: flex;
+    overflow: hidden;
+}
+
+.search-result .search-filters {
+    width: 140px;
+    height: 100%;
+    border-left: 1px solid var(--border);
+    color: #e1bee7;
+}
+
+.search-filters p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.search-result .result {
+    height: fit-content;
+    max-height: 100%;
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+
+    padding: 0 10px;
+    overflow-y: auto;
+}
+
+.search-result .result::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-result .result::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.search-result .result::-webkit-scrollbar-thumb {
+    background: #64ceff
+}
+
+.search-result .result::-webkit-scrollbar-thumb:hover {
+    background: rgb(118, 150, 255);
+}
+
+.result .result-status {
+    width: 100%;
+    color: #e1bee7;
+    margin-right: 50%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.result .result-status i {
+    font-size: 1.5rem;
+}
+
+.search-result .result .builder {
+    font-size: 0.8rem;
+    margin: 5px;
+    width: 250px;
+    height: 100px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--sideBackground);
+    box-shadow: var(--lightShadow);
+}
+
+.result .builder a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.result .search-result-title {
+    padding-left: 15px;
+    text-align: justify;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.result .search-result-image {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+    .fixed-holder {
+        right: 180px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .fixed-holder {
+        display: none;
+    }
+
+    .active-search {
+        display: block;
+        top: 120px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 300px;
+        margin: 0;
+    }
+
+    .active-search .search-field {
+        height: 50px;
+        margin: 0;
+    }
+
+    .active-search .search-field i {
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+
+    .active-search .search-field input {
+        width: 250px;
+        font-size: 1.3rem;
+    }
+
+    .active-search .search-result {
+        top: 55px;
+        right: 150px;
+        height: calc(100vh - 255px);
+        transform: translateX(50%);
+    }
+
+    .active-search .search-result .result {
+        width: calc(100vw - 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: calc(100vw - 40px);
+    }
+
+    .active-search .search-result .result-status {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .active-search {
+        width: calc(100vw - 40px);
+        top: 60px;
+    }
+
+    .active-search .search-field input {
+        width: 100%;
+    }
+
+    .active-search .search-result {
+        right: 0;
+        height: calc(100vh - 165px);
+        transform: none;
+    }
+}

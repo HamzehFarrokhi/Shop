@@ -1,0 +1,22 @@
+.navigator-design {
+    padding: 6px 0;
+    padding-right: 14px;
+    cursor: pointer;
+    color: var(--purple);
+    border-right: 1px solid var(--border);
+    list-style-type: circle;
+}
+
+.navigator-design p {
+    font-size: 0.8rem;
+}
+
+.navigator-design i {
+    font-size: 0.9rem;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+
+.navigator-design:hover.navigator-design i {
+    transform: translateX(-5px);
+}

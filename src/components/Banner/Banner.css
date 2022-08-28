@@ -1,0 +1,18 @@
+.banner {
+    margin: 40px 0;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1300px) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .banner {
+        display: none;
+    }
+}

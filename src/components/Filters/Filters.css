@@ -1,0 +1,134 @@
+.filter-container {
+    border-left: 2px solid var(--border);
+    padding: 15px;
+    padding-left: 25px;
+    width: 20%;
+    max-width: 300px;
+    min-width: 250px;
+    margin-top: 20px;
+}
+
+.filter-container-title {
+    font-size: 1rem;
+    color: var(--color2);
+}
+
+.filter-container .filter-sticky {
+    position: static;
+    /* development */
+}
+
+.filter-container .category-filter {
+    padding: 16px 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: var(--lightShadow);
+}
+
+.category-filter .filter-title {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.filter-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primaryGradient);
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: var(--boxShadowHover);
+    display: none;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    color: var(--cta);
+}
+
+.filter-button i {
+    font-size: 1.4rem;
+    margin: 0 5px;
+}
+
+.filter-button p {
+    padding-bottom: 2px;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 810px) {
+    .filter-container {
+        position: fixed;
+        top: 117px;
+        right: -250px;
+    }
+
+    .filter-button {
+        display: flex;
+    }
+
+    .active-filter {
+        display: block;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        background-color: var(--background);
+        width: 320px;
+        height: calc(100vh - 117px);
+        padding: 0;
+        margin: 0;
+        max-width: none;
+        min-width: none;
+        overflow-y: scroll;
+        transition: right 0.25s;
+    }
+
+    .active-filter::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .active-filter::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .active-filter::-webkit-scrollbar-thumb {
+        background: #ccc;
+    }
+
+    .active-filter::-webkit-scrollbar-thumb:hover {
+        background: rgb(118, 150, 255);
+    }
+
+    .active-filter>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .active-filter>div>div {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .filter-container {
+        top: 166px;
+    }
+
+    .active-filter {
+        height: calc(100vh - 166px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .active-filter {
+        width: 100%;
+    }
+}

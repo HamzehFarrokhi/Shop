@@ -1,0 +1,28 @@
+.coming-soon {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: var(--primaryHover);
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+}
+
+.coming-soon>p {
+    color: var(--color3);
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 350px) {
+    .coming-soon {
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+    .coming-soon>p {
+        margin: 10px 0;
+    }
+}

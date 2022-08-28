@@ -1,0 +1,62 @@
+.add-address {
+    height: 50px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--lightShadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color2);
+}
+
+.add-address:hover {
+    background-color: var(--cta);
+}
+
+.add-address i {
+    font-size: 1.2rem;
+    margin-left: 16px;
+}
+
+.address-list {
+    margin-bottom: 20px;
+}
+
+.address-item {
+    padding: 16px 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.address-item:last-child {
+    border-bottom: none;
+}
+
+.address-item .address-detail {
+    display: flex;
+    margin-top: 15px;
+}
+
+.address-detail>div {
+    margin-left: 25px;
+}
+
+.address-detail>div>p {
+    margin-left: 8px;
+    padding: 4px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .address-item .address-detail {
+        flex-wrap: wrap;
+    }
+
+    .address-detail>div {
+        margin-left: 25px;
+        flex-wrap: wrap;
+    }
+
+    .address-detail>div>p {
+        margin-left: 8px;
+    }
+}
